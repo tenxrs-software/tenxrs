@@ -6,6 +6,9 @@ function App() {
   return (
     <>
       <Home />
+      <div style={{backgroundColor: "black", height: innerHeight}}>
+        <h1>hi</h1>
+    </div>        
     </>
   )
 }
