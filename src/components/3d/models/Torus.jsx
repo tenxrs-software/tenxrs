@@ -4,7 +4,7 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { useControls } from "leva";
 
 const Torus = () => {
-    const { nodes } = useGLTF("/tenxtorus.glb");
+    const { nodes } = useGLTF("./tenxtorus.glb");
     const { viewport, camera } = useThree(); // Destructuring camera from useThree
 
     const mesh = useRef();
