@@ -12,6 +12,7 @@ border-radius: 200px;
 padding: 18px;
 max-width: 1440px;
 border: 1.5px solid ${props => props.theme.colors.common.grey};
+transition: all 0.2s ease-in-out;
 
 &:hover {
     background: ${props => props.theme.colors.background.buttons.hover};

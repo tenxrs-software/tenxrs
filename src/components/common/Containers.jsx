@@ -12,24 +12,40 @@ padding-bottom: ${props => props.$end ? '80px' : 0};
 `
 
 export const CardContainer = styled.div`
-width: 398px;
-margin-bottom: 150px;
-`
+  width: 100%;
+  max-width: 398px;
+  margin-bottom: 150px;
 
-export const IconContainer = styled.div`
-width: 80px;
-margin-bottom: 150px;
-`
+  @media screen and (max-width: 768px) {
+    /* Adjust width for smaller devices */
+    max-width: 90%;
+  }
+  `
+  
+  export const IconContainer = styled.div`
+  width: 80px;
+  margin-bottom: 150px;
 
-export const PillsContainer = styled.div`
-display: flex;
-gap: ${props => props.$gap? props.$gap : '10px'};
-margin-top: ${props => props.$marginTop? props.$marginTop : 0};
+  @media screen and (max-width: 768px) {
+    /* Adjust width for smaller devices */
+    max-width: 90%;
+  }
+  `
+  
+  export const PillsContainer = styled.div`
+  display: flex;
+  gap: ${props => props.$gap? props.$gap : '10px'};
+  margin-top: ${props => props.$marginTop? props.$marginTop : 0};
 `
 
 export const FlexRow = styled.div`
 display: flex;
 gap: ${props => props.$gap? props.$gap : 'auto'};
+
+@media screen and (max-width: 768px) {
+    max-width: 90%;
+    flex-direction: column;
+  }
 `
 
 
