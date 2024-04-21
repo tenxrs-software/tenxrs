@@ -1,4 +1,4 @@
-import { Center } from "../common/Containers";
+import { Center, PillsContainer } from "../common/Containers";
 import { FWButton } from "../common/FWButton";
 import { Pill } from "../common/Pill";
 import { Title } from "../common/Title";
@@ -11,33 +11,33 @@ export const Contact = () => {
         <>
             <Center $end="true">
                 <Title>Tell us about your <br /> <TitleSpan>project</TitleSpan></Title>
-                <div className="pills-container" style={{ display: 'flex', gap: '10px' }}>
+                <PillsContainer>
                     <Pill>Web Development</Pill>
                     <Pill>Application Development</Pill>
                     <Pill>Maintenance</Pill>
                     <Pill>Cloud Solutions</Pill>
                     <Pill>Other</Pill>
-                </div>
+                </PillsContainer>
                 <InputContainer type="text" placeholder="Your Name"/>
                 <InputContainer type="text" placeholder="Your Email"/>
                 <InputContainer type="text" placeholder="Tell Us About Your Project"/>
 
                 <BudgetTitle>Project Budget</BudgetTitle>
 
-                <div className="pills-container" style={{ display: 'flex', gap: '10px' }}>
+                <PillsContainer>
                     <Pill>10K - 20K</Pill>
                     <Pill>30K - 40K</Pill>
                     <Pill>50K - 100K</Pill>
                     <Pill>+100K</Pill>
-                </div>
+                </PillsContainer>
 
                 <FWButton>Get In Touch</FWButton>
 
-                <div className="pills-container" style={{ display: 'flex', gap: '40px', marginTop: '80px' }}>
+                <PillsContainer $marginTop={'80px'} gap={'40px'}>
                     <Pill>info@tenxrs.com</Pill>
                     <BudgetTitle>Cell: 012 345 7890</BudgetTitle>
                     <BudgetTitle>Location: Broadacres Drive, Fourways, 2191 </BudgetTitle>
-                </div>
+                </PillsContainer>
             </Center>
         </>);
 }

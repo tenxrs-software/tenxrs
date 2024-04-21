@@ -18,7 +18,7 @@ justify-content: space-between;
 }
 `
 
-export const H = ({ icon, title, subTitle }) => {
+export const ProcessItems = ({ icon, title, subTitle }) => {
     return (<>
 
 <Splide options={{perPage: '3', rewind: true}}>
