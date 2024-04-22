@@ -1,12 +1,12 @@
-import { Canvas } from "@react-three/fiber"
-import Scene from "../3d/Scene"
+import { Canvas } from "@react-three/fiber";
+import Scene from "../3d/Scene";
 
 const Home = () => {
-    return (
+  return (
     <Canvas>
-        <Scene />
+      <Scene />
     </Canvas>
-    )
-}
+  );
+};
 
 export default Home;
