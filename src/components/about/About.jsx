@@ -4,7 +4,7 @@ import {
   FlexRowContainer,
   IconContainer,
   PillsContainer,
-  Padding,
+  AppPadding,
   SpectrumDiv,
 } from "../common/Containers.jsx";
 import { FWButton } from "../common/FWButton";
@@ -24,6 +24,10 @@ const About = () => {
     window.addEventListener("resize", () => {
       setWidth(window.innerWidth);
     });
+
+    return () => {
+      window.removeEventListener("resize");
+    };
   }, [width]);
 
   return (
@@ -31,10 +35,10 @@ const About = () => {
       <Center>
         <FWButton>Let's work</FWButton>
         <Line />
-        <Padding>
+        <AppPadding>
           <Title>
-            Building Digital Products with Precision <br />{" "}
-            <TitleSpan>From Idea to Launch: </TitleSpan>{" "}
+            Building Digital Products with Precision <br />
+            <TitleSpan>From Idea to Launch: </TitleSpan>
           </Title>
           <Splide
             options={{
@@ -179,8 +183,8 @@ const About = () => {
           <FlexRowContainer>
             <SpectrumDiv src="/src/assets/glass-spectrum.png" />
             <Title $minMargin="24px 0">
-              collaborated with Organisations in diverse <br />{" "}
-              <TitleSpan>sectors</TitleSpan>{" "}
+              collaborated with Organisations in diverse <br />
+              <TitleSpan>sectors</TitleSpan>
             </Title>
             <PillsContainer>
               <Pill>Startups</Pill>
@@ -199,7 +203,7 @@ const About = () => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-        </Padding>
+        </AppPadding>
       </Center>
     </>
   );

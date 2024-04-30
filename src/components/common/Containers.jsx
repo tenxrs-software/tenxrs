@@ -21,7 +21,7 @@ export const CardContainer = styled.div`
     max-width: 90%;
   }
 `;
-export const Padding = styled.div`
+export const AppPadding = styled.div`
   padding: 0 24px;
 `;
 export const IconContainer = styled.div`
@@ -50,9 +50,11 @@ export const FlexRow = styled.div`
   display: flex;
   gap: ${(props) => (props.$gap ? props.$gap : "auto")};
   margin: 100px 0;
+  justify-content: center;
 
-  @media screen and (max-width: 768px) {
-    max-width: 90%;
+  @media screen and (max-width: 425px) {
+    flex-direction: column-reverse;
+    max-width: 100%;
   }
 `;
 
