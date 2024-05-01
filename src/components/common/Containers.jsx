@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const Center = styled.div`
-max-width: 1440px;
-width: 100%;
-display: flex;
-flex-direction: column;
-margin: 0 auto;
-background: black;
-text-align: ${props => props.$text? 'center' : 'left'};
-padding-bottom: ${props => props.$end ? '80px' : 0};
-`
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: black;
+  text-align: ${(props) => (props.$text ? "center" : "left")};
+  padding-bottom: ${(props) => (props.$end ? "80px" : 0)};
+`;
 
 export const CardContainer = styled.div`
   width: 100%;
@@ -20,42 +20,75 @@ export const CardContainer = styled.div`
     /* Adjust width for smaller devices */
     max-width: 90%;
   }
-  `
-  
-  export const IconContainer = styled.div`
-  width: 80px;
+`;
+export const Padding_24 = styled.div`
+  padding: 0 24px;
+`;
+export const IconContainer = styled.div`
+  width: 50px;
   margin-bottom: 150px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     /* Adjust width for smaller devices */
-    max-width: 90%;
+    max-width: 80%;
   }
-  `
-  
-  export const PillsContainer = styled.div`
+`;
+
+export const PillsContainer = styled.div`
   display: flex;
-  gap: ${props => props.$gap? props.$gap : '10px'};
-  margin-top: ${props => props.$marginTop? props.$marginTop : 0};
-`
+  gap: ${(props) => (props.$gap ? props.$gap : "10px")};
+  margin-top: ${(props) => (props.$marginTop ? props.$marginTop : 0)};
+  margin-bottom: ${(props) => (props.$minMargin ? props.$minMargin : 0)};
+
+  @media screen and (max-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+`;
 
 export const FlexRow = styled.div`
-display: flex;
-gap: ${props => props.$gap? props.$gap : 'auto'};
-
-@media screen and (max-width: 768px) {
-    max-width: 90%;
-    flex-direction: column;
+  display: flex;
+  gap: ${(props) => (props.$gap ? props.$gap : "auto")};
+  margin: ${(props) => (props.$marginTop ? props.$marginTop : "100px 0")};
+  justify-content: ${(props) =>
+    props.$contentType ? props.$contentType : "center"};
+  @media screen and (max-width: 425px) {
+    flex-direction: column-reverse;
+    max-width: 100%;
   }
-`
+`;
 
+export const SpectrumDiv = styled.img`
+  max-width: 360px;
+  max-height: 360px;
+
+  @media screen and (max-width: 768px) {
+    width: 228px;
+    height: 228px;
+  }
+`;
+
+export const BudgetFlex = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ContactContainer = styled.div`
+  align-items: ${(props) => props.$alignCenter};
+  display: grid;
+  justify-self: start;
+  grid-template-columns: repeat(3, max-content);
+`;
 
 export const FlexRowContainer = ({ children }) => {
-    return (<FlexRow $gap='115px'>
-    {children[0]}
-    <div>
+  return (
+    <FlexRow $gap="115px">
+      <div>{children[0]}</div>
+      <div>
         {children[1]}
         {children[2]}
-    </div>
+      </div>
     </FlexRow>
-    )
-}
+  );
+};
