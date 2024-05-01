@@ -5,7 +5,8 @@ export const Pill = styled.button`
   color: ${(props) => props.theme.colors.text.white};
   font-size: 20px;
   border-radius: 200px;
-  padding: 18px;
+  padding: ${(props) =>
+    props.$customPadding ? props.$customPadding : "10px 24px"};
   max-width: min-content 1440px;
   border: 1.5px solid ${(props) => props.theme.colors.common.grey};
   transition: all 0.2s ease-in;

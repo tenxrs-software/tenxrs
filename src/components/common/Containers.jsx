@@ -21,11 +21,11 @@ export const CardContainer = styled.div`
     max-width: 90%;
   }
 `;
-export const AppPadding = styled.div`
+export const Padding_24 = styled.div`
   padding: 0 24px;
 `;
 export const IconContainer = styled.div`
-  width: 80px;
+  width: 50px;
   margin-bottom: 150px;
 
   @media screen and (max-width: 1024px) {
@@ -49,9 +49,9 @@ export const PillsContainer = styled.div`
 export const FlexRow = styled.div`
   display: flex;
   gap: ${(props) => (props.$gap ? props.$gap : "auto")};
-  margin: 100px 0;
-  justify-content: center;
-
+  margin: ${(props) => (props.$marginTop ? props.$marginTop : "100px 0")};
+  justify-content: ${(props) =>
+    props.$contentType ? props.$contentType : "center"};
   @media screen and (max-width: 425px) {
     flex-direction: column-reverse;
     max-width: 100%;
@@ -68,9 +68,22 @@ export const SpectrumDiv = styled.img`
   }
 `;
 
+export const BudgetFlex = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ContactContainer = styled.div`
+  align-items: ${(props) => props.$alignCenter};
+  display: grid;
+  justify-self: start;
+  grid-template-columns: repeat(3, max-content);
+`;
+
 export const FlexRowContainer = ({ children }) => {
   return (
-    <FlexRow $gap="100px">
+    <FlexRow $gap="115px">
       <div>{children[0]}</div>
       <div>
         {children[1]}

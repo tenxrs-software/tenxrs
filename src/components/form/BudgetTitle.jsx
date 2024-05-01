@@ -5,5 +5,4 @@ export const BudgetTitle = styled.h3`
   color: ${(props) => props.theme.colors.text.white};
   font-weight: 400;
   text-transform: capitalize;
-  margin-bottom: 46px;
 `;

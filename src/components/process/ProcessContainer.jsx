@@ -1,6 +1,5 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import styled from "styled-components";
-import { Padding } from "../common/Containers";
 import searchIcon from "../../assets/Vectorsearch.png";
 import BrushIcon from "../../assets/Vectorpaint-brush.png";
 import TubeIcon from "../../assets/tube.png";
@@ -38,51 +37,49 @@ export const ProcessCardContainerText = styled.h5`
 
 export const ProcessItems = () => {
   return (
-    <Padding>
-      <Splide options={{ perPage: "3", rewind: true, gap: "24px" }}>
-        <SplideSlide>
-          <ProcessCardContainer>
-            <img src={searchIcon} alt="img" />
-            <div>
-              <h4>Discovery</h4>
-              <ProcessCardContainerText $pale>
-                Clarifying and focusing on the problem.
-              </ProcessCardContainerText>
-            </div>
-          </ProcessCardContainer>
-        </SplideSlide>
-        <SplideSlide>
-          <ProcessCardContainer>
-            <img src={BrushIcon} alt="" />
-            <div>
-              <h4>Design</h4>
-              <ProcessCardContainerText $pale>
-                Building a testable version of the idea.
-              </ProcessCardContainerText>
-            </div>
-          </ProcessCardContainer>
-        </SplideSlide>
-        <SplideSlide>
-          <ProcessCardContainer>
-            <img src={BrowseIcon} />
-            <div>
-              <h4>Development</h4>
-              <ProcessCardContainerText $pale>
-                Build out of design style guide
-              </ProcessCardContainerText>
-            </div>
-          </ProcessCardContainer>
-        </SplideSlide>
-        <SplideSlide>
-          <ProcessCardContainer>
-            <img src={TubeIcon} alt="" />
-            <div>
-              <h4>Validation</h4>
-              <h5>Implement product analytics</h5>
-            </div>
-          </ProcessCardContainer>
-        </SplideSlide>
-      </Splide>
-    </Padding>
+    <Splide options={{ perPage: "3", rewind: true, gap: "24px" }}>
+      <SplideSlide>
+        <ProcessCardContainer>
+          <img src={searchIcon} alt="img" />
+          <div>
+            <h4>Discovery</h4>
+            <ProcessCardContainerText $pale>
+              Clarifying and focusing on the problem.
+            </ProcessCardContainerText>
+          </div>
+        </ProcessCardContainer>
+      </SplideSlide>
+      <SplideSlide>
+        <ProcessCardContainer>
+          <img src={BrushIcon} alt="" />
+          <div>
+            <h4>Design</h4>
+            <ProcessCardContainerText $pale>
+              Building a testable version of the idea.
+            </ProcessCardContainerText>
+          </div>
+        </ProcessCardContainer>
+      </SplideSlide>
+      <SplideSlide>
+        <ProcessCardContainer>
+          <img src={BrowseIcon} />
+          <div>
+            <h4>Development</h4>
+            <ProcessCardContainerText $pale>
+              Build out of design style guide
+            </ProcessCardContainerText>
+          </div>
+        </ProcessCardContainer>
+      </SplideSlide>
+      <SplideSlide>
+        <ProcessCardContainer>
+          <img src={TubeIcon} alt="" />
+          <div>
+            <h4>Validation</h4>
+            <h5>Implement product analytics</h5>
+          </div>
+        </ProcessCardContainer>
+      </SplideSlide>
+    </Splide>
   );
 };
