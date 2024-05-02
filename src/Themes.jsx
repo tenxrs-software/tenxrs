@@ -13,7 +13,8 @@ export const main = {
     text: {
       white: "#FFFFFF",
       spans: {
-        yellow: "#F7A633",
+        white: "#FFFFFF",
+        yellow: "#F7A633"
       },
       pale: "#ACACAC",
     },
@@ -23,9 +24,25 @@ export const main = {
   },
   font: {
     sizes: {
+      mainTitle: "92px",
       title: "40px",
       button: "20px",
     },
+    style: {
+      title: "italic",
+      subTitle: "regular"
+    },
+    weight: {
+      title: "200",
+      subTitle: "normal",
+      weightSix: "600",
+      weightFour: "400"
+    }
   },
-  spacing: {},
+  spacing: {
+    margin: {
+      marginLeft: "64px",
+      marginZero: "0px"
+    }
+  },
 };
