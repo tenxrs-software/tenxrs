@@ -14,11 +14,15 @@ export const Center = styled.div`
 export const CardContainer = styled.div`
   width: 100%;
   max-width: 398px;
+  // max-height: 314px;
   margin-bottom: 150px;
+  background: ${(props) => props.$CardBg};
+  padding: 24px 24px 0 24px;
+  border-radius: 20px;
 
   @media screen and (max-width: 768px) {
     /* Adjust width for smaller devices */
-    max-width: 90%;
+    font-size: 13px;
   }
 `;
 export const Padding_24 = styled.div`
@@ -72,13 +76,6 @@ export const BudgetFlex = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
-
-export const ContactContainer = styled.div`
-  align-items: ${(props) => props.$alignCenter};
-  display: grid;
-  justify-self: start;
-  grid-template-columns: repeat(3, max-content);
 `;
 
 export const FlexRowContainer = ({ children }) => {

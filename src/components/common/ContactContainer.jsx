@@ -5,6 +5,10 @@ export const ContactContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, max-content);
   text-align: center;
-  gap: 10px;
-  padding: 10px;
+  gap: 0 24px;
+
+  @media screen and (max-width: 425px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 `;
