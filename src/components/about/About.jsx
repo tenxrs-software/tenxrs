@@ -15,6 +15,8 @@ import "../../assets/card-design.png";
 import { Line } from "../common/LineDivider.jsx";
 import { Pill } from "../common/Pill.jsx";
 import { useEffect, useState } from "react";
+import Card from "../common/card/Card.jsx";
+import { data } from "../data.js";
 
 const About = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -43,32 +45,38 @@ const About = () => {
           options={{
             perPage: 3.5,
             rewind: true,
-            gap: width <= 768 ? "0px" : "24px",
+            gap: "24px",
             pagination: false,
             focus: "center",
             arrows: false,
+            breakpoints: {
+              1024: {
+                perPage: 2.2,
+              },
+              768: {
+                perPage: 2.2,
+              },
+              425: {
+                perPage: 1.5,
+              },
+            },
           }}
         >
-          <SplideSlide>
-            <CardContainer>
-              <img src="/src/assets/card-design.png" width="100%" />
-            </CardContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <CardContainer>
-              <img src="/src/assets/card-miro.png" width="100%" />
-            </CardContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <CardContainer>
-              <img src="/src/assets/card-web-development.png" width="100%" />
-            </CardContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <CardContainer>
-              <img src="/src/assets/card-app-development.png" width="100%" />
-            </CardContainer>
-          </SplideSlide>
+          {data.map((item, index) => {
+            return (
+              <SplideSlide key={index}>
+                <div style={{ display: "flex" }}>
+                  <CardContainer $CardBg={item.background}>
+                    <Card
+                      icon={item.icon}
+                      serviceImg={item.img}
+                      title={item.title}
+                    />
+                  </CardContainer>
+                </div>
+              </SplideSlide>
+            );
+          })}
         </Splide>
 
         <Splide

@@ -14,6 +14,12 @@ const Input = styled.input`
     color: ${(props) => props.theme.colors.common.grey};
     font-size: 24px;
   }
+
+  @media screen and (max-width: 425px) {
+    font-size: 13px;
+    padding: 8px 0;
+    margin: 40px 0;
+  }
 `;
 
 export const InputContainer = ({ placeholder, type }) => {
