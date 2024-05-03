@@ -34,7 +34,7 @@ const About = () => {
   return (
     <>
       <Center>
-        <FWButton>Let's work</FWButton>
+        <FWButton>Let's Work</FWButton>
         <Line />
 
         <Title>

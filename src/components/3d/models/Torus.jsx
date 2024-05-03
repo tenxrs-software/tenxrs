@@ -19,69 +19,33 @@ const Torus = () => {
   const { viewport } = useThree(); // Destructuring viewport from useThree
 
   const mesh = useRef();
-  const torusPosition = [0, 1, 0]; // Initial position of the torus
+  const torusPosition = [1, -2, 0]; // Initial position of the torus
 
   useFrame(() => {
     mesh.current.rotation.x += 0.03;
   });
 
+  const materialProps = useControls({
+      thickness: { value: 0.6, min: 0, max: 3, step: 0.05 },
+      roughness: { value: 0, min: 0, max: 1, step: 0.1 },
+      transmission: { value: 1, min: 0, max: 1, step: 0.1 },
+      ior: { value: 1.2, min: 0, max: 3, step: 0.1 },
+      chromaticAberration: { value: 0.02, min: 0, max: 1 },
+      backside: { value: true },
+  });
+
   return (
-    <>
-      <directionalLight intensity={10} position={[-5, 0, 0]} />
-      <Environment preset="warehouse" />
-      <group position={[0, -2.5, -1]}>
-        <Text
-          position={[0, 2, 0]}
-          fontSize={viewport.width / 20}
-          font={"Poppins-Light.ttf"}
-          textAlign="left"
-          fontWeight="bold"
-        >
-          We Turn
-        </Text>
-        <Text
-          position={[0, 1, 0]}
-          fontSize={viewport.width / 20}
-          font={"Poppins-Light.ttf"}
-          textAlign="left"
-        >
-          Ideas Into Reality
-        </Text>
-        <Text
-          position={[0, 0, 0]}
-          fontSize={viewport.width / 60}
-          font={"Poppins-Light.ttf"}
-          textAlign="left"
-        >
-          TENXRS
-        </Text>
-      </group>
-      <group position={torusPosition} scale={1.1}>
-        <Stars
-          radius={100}
-          depth={50}
-          count={350}
-          factor={4}
-          saturation={0}
-          fade
-          speed={2}
-        />
-        <mesh ref={mesh} {...nodes.Torus001}>
-          <OrbitControls enableZoom={false} />
-          <MeshTransmissionMaterial
-            {...{
-              thickness: 0.6,
-              roughness: 6,
-              transmission: 1,
-              ior: 1.2,
-              chromaticAberration: 0.02,
-              backside: true,
-            }}
-          />
-        </mesh>
-        {/* </Float> */}
-      </group>
-    </>
+      <>
+          <directionalLight intensity={10} position={[-5, 0, 0]} />
+          <Environment preset='warehouse' />
+          <group position={torusPosition} scale={3.4}>
+              <mesh ref={mesh} {...nodes.Torus001}>
+              <OrbitControls enableZoom={false}/>
+                  <MeshTransmissionMaterial {...materialProps} />
+              </mesh>
+              {/* </Float> */}
+          </group>
+      </>
   );
 };
 

@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const FWButton = styled.button`
   background: ${(props) => props.theme.colors.background.buttons.primary};
   width: 100%;
-  margin-top: 80px;
+  margin-top: 57px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 80px;
   color: ${(props) => props.theme.colors.text.white};
   font-size: 20px;
   border-radius: 200px;
@@ -16,6 +17,7 @@ export const FWButton = styled.button`
 
   &:hover {
     background: ${(props) => props.theme.colors.background.buttons.hover};
+    border: 1.5px solid transparent;
   }
 
   top: 60%;
