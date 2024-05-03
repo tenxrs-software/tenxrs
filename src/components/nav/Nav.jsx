@@ -4,8 +4,6 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 color: white;
-margin-left: 64px;
-margin-right: 64px;
 `
 const Logo = styled.div`
 font-weight: regular;

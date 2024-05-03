@@ -7,7 +7,7 @@ export const Proccess = () => {
   return (
     <>
       <Center $text="true">
-        <Title>
+        <Title marBtm = "40px" widthVary = "100%" style={{textAlign: "center"}}>
           Our process is <TitleSpan>simple</TitleSpan>
         </Title>
         <ProcessItems icon={"icon"} title={"Title"} subTitle={"Sub"} />

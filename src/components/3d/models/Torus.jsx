@@ -38,7 +38,7 @@ const Torus = () => {
       <>
           <directionalLight intensity={10} position={[-5, 0, 0]} />
           <Environment preset='warehouse' />
-          <group position={torusPosition} scale={3.4}>
+          <group position={torusPosition} scale={3.2}>
               <mesh ref={mesh} {...nodes.Torus001}>
               <OrbitControls enableZoom={false}/>
                   <MeshTransmissionMaterial {...materialProps} />

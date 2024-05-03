@@ -35,14 +35,13 @@ export const main = {
     weight: {
       title: "200",
       subTitle: "normal",
-      weightSix: "600",
-      weightFour: "400"
+      sixHundred: "600",
+      fourHundred: "400"
     }
   },
   spacing: {
     margin: {
-      marginLeft: "64px",
-      marginZero: "0px"
+
     }
   },
 };
