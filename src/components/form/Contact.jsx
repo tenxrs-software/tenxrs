@@ -1,4 +1,4 @@
-import { Center, PillsContainer } from "../common/Containers";
+import { BudgetFlex, Center, PillsContainer } from "../common/Containers";
 import { ContactContainer } from "../common/ContactContainer";
 import { FWButton } from "../common/FWButton";
 import { Pill } from "../common/Pill";
@@ -36,9 +36,7 @@ export const Contact = () => {
 
         <FWButton>Send Request</FWButton>
         <ContactContainer $alignCenter={"center"}>
-          <PillsContainer>
-            <Pill>info@tenxrs.com</Pill>
-          </PillsContainer>
+          <Pill>info@tenxrs.com</Pill>
 
           <BudgetTitle>Cell: 012 345 7890</BudgetTitle>
           <BudgetTitle>Location: Broadacres Drive, Fourways, 2191 </BudgetTitle>

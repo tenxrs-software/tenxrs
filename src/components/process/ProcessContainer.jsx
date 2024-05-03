@@ -11,7 +11,7 @@ const ProcessCardContainer = styled.div`
   flex-direction: column;
   border-radius: 20px;
   align-items: flex-start;
-  height: 319px;
+  height: 314px;
   padding: 25px 30px;
   justify-content: space-between;
   text-align: start;
@@ -27,7 +27,7 @@ const ProcessCardContainer = styled.div`
   }
   @media screen and (max-width: 768px) {
     max-height: 224px;
-    padding: 25px 30px;
+    padding: 24px;
     text-align: start;
 `;
 
@@ -37,7 +37,24 @@ export const ProcessCardContainerText = styled.h5`
 
 export const ProcessItems = () => {
   return (
-    <Splide options={{ perPage: "3", rewind: true, gap: "24px" }}>
+    <Splide
+      options={{
+        perPage: 3.5,
+        rewind: true,
+        gap: "24px",
+        focus: "center",
+        arrows: false,
+        pagination: false,
+        breakpoints: {
+          768: {
+            perPage: 2.2,
+          },
+          425: {
+            perPage: 1.5,
+          },
+        },
+      }}
+    >
       <SplideSlide>
         <ProcessCardContainer>
           <img src={searchIcon} alt="img" />
