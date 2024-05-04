@@ -43,7 +43,7 @@ export const PillsContainer = styled.div`
   gap: ${(props) => (props.$gap ? props.$gap : "10px")};
   margin-top: ${(props) => (props.$marginTop ? props.$marginTop : "24px")};
   margin-bottom: ${(props) => (props.$minMargin ? props.$minMargin : 0)};
-  width: ${props => props.widthSize};
+  width: ${(props) => props.$widthSize};
   flex-wrap: wrap;
 
   @media screen and (max-width: 1024px) {

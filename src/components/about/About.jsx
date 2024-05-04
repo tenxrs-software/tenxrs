@@ -37,7 +37,7 @@ const About = () => {
         <FWButton>Let's Work</FWButton>
         <Line />
 
-        <Title marBtm = "40px" marTop = "100px">
+        <Title $marBtm="40px" $marTop="100px">
           Building Digital Products with Precision <br />
           <TitleSpan>From Idea to Launch: </TitleSpan>
         </Title>
@@ -194,10 +194,11 @@ const About = () => {
 
         <FlexRowContainer>
           <SpectrumDiv src="/src/assets/glass-spectrum.png" />
-          <Title $minMargin="24px 0" widthVary = "700px">
-            collaborated with Organisations in diverse <TitleSpan>sectors</TitleSpan>
+          <Title $minMargin="24px 0" $widthVary="700px">
+            collaborated with Organisations in diverse{" "}
+            <TitleSpan>sectors</TitleSpan>
           </Title>
-          <PillsContainer widthSize = "600px">
+          <PillsContainer $widthSize="600px">
             <Pill>Startups</Pill>
             <Pill>Foreign Exchange</Pill>
             <Pill>Application</Pill>
