@@ -37,7 +37,7 @@ const About = () => {
         <FWButton>Let's Work</FWButton>
         <Line />
 
-        <Title>
+        <Title marBtm = "40px" marTop = "100px">
           Building Digital Products with Precision <br />
           <TitleSpan>From Idea to Launch: </TitleSpan>
         </Title>
@@ -194,11 +194,10 @@ const About = () => {
 
         <FlexRowContainer>
           <SpectrumDiv src="/src/assets/glass-spectrum.png" />
-          <Title $minMargin="24px 0">
-            collaborated with Organisations in diverse <br />
-            <TitleSpan>sectors</TitleSpan>
+          <Title $minMargin="24px 0" widthVary = "700px">
+            collaborated with Organisations in diverse <TitleSpan>sectors</TitleSpan>
           </Title>
-          <PillsContainer>
+          <PillsContainer widthSize = "600px">
             <Pill>Startups</Pill>
             <Pill>Foreign Exchange</Pill>
             <Pill>Application</Pill>
@@ -206,7 +205,7 @@ const About = () => {
             <Pill>Neuroscience</Pill>
           </PillsContainer>
         </FlexRowContainer>
-        <p style={{ color: "white" }}>
+        {/* <p style={{ color: "white" }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -214,7 +213,7 @@ const About = () => {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        </p> */}
       </Center>
     </>
   );

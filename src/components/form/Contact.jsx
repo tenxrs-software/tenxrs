@@ -27,7 +27,7 @@ export const Contact = () => {
 
         <BudgetTitle>Project Budget</BudgetTitle>
 
-        <PillsContainer $minMargin="80px">
+        <PillsContainer>
           <Pill>10K - 20K</Pill>
           <Pill>30K - 40K</Pill>
           <Pill>50K - 100K</Pill>

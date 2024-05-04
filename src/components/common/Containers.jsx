@@ -25,8 +25,8 @@ export const CardContainer = styled.div`
     font-size: 13px;
   }
 `;
-export const Padding_24 = styled.div`
-  padding: 0 24px;
+export const Padding_64 = styled.div`
+  padding: 0 64px;
 `;
 export const IconContainer = styled.div`
   width: 50px;
@@ -41,8 +41,10 @@ export const IconContainer = styled.div`
 export const PillsContainer = styled.div`
   display: flex;
   gap: ${(props) => (props.$gap ? props.$gap : "10px")};
-  margin-top: ${(props) => (props.$marginTop ? props.$marginTop : 0)};
+  margin-top: ${(props) => (props.$marginTop ? props.$marginTop : "24px")};
   margin-bottom: ${(props) => (props.$minMargin ? props.$minMargin : 0)};
+  width: ${props => props.widthSize};
+  flex-wrap: wrap;
 
   @media screen and (max-width: 1024px) {
     display: grid;

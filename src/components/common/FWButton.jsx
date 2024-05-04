@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FWButton = styled.button`
   background: ${(props) => props.theme.colors.background.buttons.primary};
   width: 100%;
-  margin-top: 57px;
+  margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
