@@ -37,7 +37,17 @@ const About = () => {
         <FWButton>Let's Work</FWButton>
         <Line />
 
-        <Title $marBtm="40px" $marTop="100px">
+        <Title
+          $marBtm="40px"
+          $marTop="100px"
+          $margin="71px 0 34px"
+          $768width="607px"
+          $425width="321px"
+          $425fontSize="20px"
+          $768fontSize="32px"
+          $1024width="642px"
+          $1024margin="70px 0 40px"
+        >
           Building Digital Products with Precision <br />
           <TitleSpan>From Idea to Launch: </TitleSpan>
         </Title>
@@ -56,8 +66,9 @@ const About = () => {
               768: {
                 perPage: 2.2,
               },
-              425: {
-                perPage: 1.5,
+              500: {
+                perPage: 1.2,
+                gap: "19px",
               },
             },
           }}
@@ -84,9 +95,13 @@ const About = () => {
             perPage: "10",
             rewind: true,
             autoplay: true,
-            height: "104px",
             arrows: false,
             pagination: false,
+            breakpoints: {
+              425: {
+                perPage: 4.5,
+              },
+            },
           }}
         >
           <SplideSlide>
@@ -193,12 +208,32 @@ const About = () => {
         </Splide>
 
         <FlexRowContainer>
-          <SpectrumDiv src="/src/assets/glass-spectrum.png" />
-          <Title $minMargin="24px 0" $widthVary="700px">
+          <SpectrumDiv
+            src="/src/assets/glass-spectrum.png"
+            $768width="29.8vw"
+          />
+          <Title
+            $minMargin="24px 0"
+            $widthVary="700px"
+            $425width="262px"
+            $TextAlign="center"
+            $425padding="0 50px"
+            $425fontSize="20px"
+            $768fontSize="2rem"
+            $768width="56vw"
+            $768margin="0"
+            $1024width={width < 1024 ? "50vw" : "52vw"}
+            $1024margin="0"
+          >
             collaborated with Organisations in diverse{" "}
             <TitleSpan>sectors</TitleSpan>
           </Title>
-          <PillsContainer $widthSize="600px">
+          <PillsContainer
+            $widthSize="600px"
+            $425width="349px"
+            $768width="41.7vw"
+            $1024width="42.7vw"
+          >
             <Pill>Startups</Pill>
             <Pill>Foreign Exchange</Pill>
             <Pill>Application</Pill>
@@ -206,6 +241,7 @@ const About = () => {
             <Pill>Neuroscience</Pill>
           </PillsContainer>
         </FlexRowContainer>
+
         {/* <p style={{ color: "white" }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

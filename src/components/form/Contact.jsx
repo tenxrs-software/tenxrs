@@ -1,4 +1,4 @@
-import { BudgetFlex, Center, PillsContainer } from "../common/Containers";
+import { Center, PillsContainer } from "../common/Containers";
 import { ContactContainer } from "../common/ContactContainer";
 import { FWButton } from "../common/FWButton";
 import { Pill } from "../common/Pill";
@@ -11,10 +11,15 @@ export const Contact = () => {
   return (
     <>
       <Center $end="true">
-        <Title $minMargin>
+        <Title
+          $marBtm="20px"
+          $425fontSize="20px"
+          $768margin="50px 0 20px"
+          $1024margin="0 0 40px"
+        >
           Tell us about your <br /> <TitleSpan>project</TitleSpan>
         </Title>
-        <PillsContainer $minMargin="20px">
+        <PillsContainer $minMargin="20px" $768margin="0" $1024margin="0">
           <Pill>Web Development</Pill>
           <Pill>Application Development</Pill>
           <Pill>Maintenance</Pill>
@@ -39,7 +44,9 @@ export const Contact = () => {
           <Pill>info@tenxrs.com</Pill>
 
           <BudgetTitle>Cell: 012 345 7890</BudgetTitle>
-          <BudgetTitle>Location: Broadacres Drive, Fourways, 2191 </BudgetTitle>
+          <BudgetTitle $425width="400px">
+            Location: Broadacres Drive, Fourways, 2191{" "}
+          </BudgetTitle>
         </ContactContainer>
       </Center>
     </>

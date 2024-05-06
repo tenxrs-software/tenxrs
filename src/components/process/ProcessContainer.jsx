@@ -15,8 +15,8 @@ const ProcessCardContainer = styled.div`
   padding: 25px 30px;
   justify-content: space-between;
   text-align: start;
-  color : white;
-  margin-bottom : 80px ; 
+  color: white;
+  margin-bottom: 80px;
   &:hover {
     background: #5534f7;
   }
@@ -29,6 +29,13 @@ const ProcessCardContainer = styled.div`
     max-height: 224px;
     padding: 24px;
     text-align: start;
+    margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: 500px) and (min-width: 375px) {
+    height: 225px;
+    margin-bottom: 0;
+  }
 `;
 
 export const ProcessCardContainerText = styled.h5`
@@ -46,11 +53,15 @@ export const ProcessItems = () => {
         arrows: false,
         pagination: false,
         breakpoints: {
+          1024: {
+            perPage: 2.2,
+          },
           768: {
             perPage: 2.2,
           },
-          425: {
-            perPage: 1.5,
+          500: {
+            perPage: 1.2,
+            gap: "19px",
           },
         },
       }}

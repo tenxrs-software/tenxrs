@@ -7,8 +7,17 @@ export const ContactContainer = styled.div`
   text-align: center;
   gap: 0 24px;
 
-  @media screen and (max-width: 425px) {
+  @media only screen and (max-width: 500px) and (min-width: 375px) {
     display: flex;
     flex-wrap: wrap;
+  }
+  @media only screen and (min-width: 500px) and (max-width: 768px) {
+    width: 420px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    display: flex;
+    width: 100%;
   }
 `;
