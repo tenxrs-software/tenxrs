@@ -4,9 +4,12 @@ const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   color: white;
+  margin-bottom : 100px;
 
-  @media screen and (max-width: 425px) {
-    margin-top: 24px;
+  @media only screen and (min-width : 375px) and (max-width: 500px) {
+    // margin-top: 24px;
+    margin-bottom : 35px;
+    padding: 25px 0;
   }
 `;
 const Logo = styled.div`

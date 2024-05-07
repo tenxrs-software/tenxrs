@@ -1,5 +1,5 @@
-import { Center } from "../common/Containers";
-import { Title } from "../common/Title";
+import { Center, Wrapper } from "../common/Containers";
+import { Subtitle } from "../common/Subtitle";
 import { TitleSpan } from "../common/TitleSpan";
 import { ProcessItems } from "./ProcessContainer";
 
@@ -7,17 +7,11 @@ export const Proccess = () => {
   return (
     <>
       <Center $text="true">
-        <Title
-          $marBtm="40px"
-          $widthVary="100%"
-          style={{ textAlign: "center" }}
-          $425fontSize="20px"
-          $768margin="0 0 34px"
-          $768fontSize="32px"
-          $1024margin="80px 0 40px"
-        >
+        <Wrapper>
+        <Subtitle $pad24>
           Our process is <TitleSpan>simple</TitleSpan>
-        </Title>
+        </Subtitle>
+        </Wrapper>
         <ProcessItems icon={"icon"} title={"Title"} subTitle={"Sub"} />
       </Center>
     </>

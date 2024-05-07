@@ -9,19 +9,24 @@ export const BudgetTitle = styled.h3`
   color: ${(props) => props.theme.colors.text.white};
   font-weight: 400;
   text-transform: capitalize;
+  margin: ${props => props.$Mb && '0 0 40px'};
+
+
+
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    margin: ;
+  }
 
   @media only screen and (min-width: 500px) and (max-width: 768px) {
     font-size: 16px;
   }
 
   @media only screen and (max-width: 500px) and (min-width: 375px) {
-    font-size: ${(props) => props.$425sub};
-    margin: 6px 0;
+    font-size: ${(props) => props.theme.font.sizes.f14};
+    margin: ${props => props.$Mb && '0 0 40px'};
     font-weight: 400;
-    width: ${(props) => props.$425width};
+    width: ${props => props.$width ? '353px' : null};
+
   }
 
-  @media only screen and (max-width: 1024px) and (min-width: 768px) {
-    margin: ${(props) => props.$1024margin};
-  }
 `;

@@ -29,17 +29,24 @@ const ProcessCardContainer = styled.div`
     max-height: 224px;
     padding: 24px;
     text-align: start;
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
 
   @media only screen and (max-width: 500px) and (min-width: 375px) {
     height: 225px;
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 `;
 
 export const ProcessCardContainerText = styled.h5`
   color: ${(props) => (props.$pale ? "#ACACAC" : "white")};
+  // font-style : ${props =>  props.theme.font.style.subTitle};
+  font-weight : ${props => props.$semiBold ? props.theme.font.weight.sixHundred : props.theme.font.weight.subTitle};
+  font-size : ${props => props.$fontSize ? props.theme.font.sizes.button : '16px'};
+  margin : 10px 0;
+  
+  
+
 `;
 
 export const ProcessItems = () => {
@@ -70,7 +77,7 @@ export const ProcessItems = () => {
         <ProcessCardContainer>
           <img src={searchIcon} alt="img" />
           <div>
-            <h4>Discovery</h4>
+            <ProcessCardContainerText $semiBold $fontSize>Discovery</ProcessCardContainerText>
             <ProcessCardContainerText $pale>
               Clarifying and focusing on the problem.
             </ProcessCardContainerText>
@@ -81,7 +88,7 @@ export const ProcessItems = () => {
         <ProcessCardContainer>
           <img src={BrushIcon} alt="" />
           <div>
-            <h4>Design</h4>
+            <ProcessCardContainerText $semiBold $fontSize>Design</ProcessCardContainerText>
             <ProcessCardContainerText $pale>
               Building a testable version of the idea.
             </ProcessCardContainerText>
@@ -92,7 +99,7 @@ export const ProcessItems = () => {
         <ProcessCardContainer>
           <img src={BrowseIcon} />
           <div>
-            <h4>Development</h4>
+            <ProcessCardContainerText $semiBold $fontSize>Development</ProcessCardContainerText>
             <ProcessCardContainerText $pale>
               Build out of design style guide
             </ProcessCardContainerText>
@@ -103,8 +110,8 @@ export const ProcessItems = () => {
         <ProcessCardContainer>
           <img src={TubeIcon} alt="" />
           <div>
-            <h4>Validation</h4>
-            <h5>Implement product analytics</h5>
+            <ProcessCardContainerText $semiBold $fontSize>Validation</ProcessCardContainerText>
+            <ProcessCardContainerText $pale>Implement product analytics</ProcessCardContainerText>
           </div>
         </ProcessCardContainer>
       </SplideSlide>

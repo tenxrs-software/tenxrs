@@ -3,10 +3,7 @@ import styled from "styled-components";
 export const FWButton = styled.button`
   background: ${(props) => props.theme.colors.background.buttons.primary};
   width: 100%;
-  margin-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 80px;
+  margin: 57px 0 81px;
   color: ${(props) => props.theme.colors.text.white};
   font-size: 20px;
   border-radius: 200px;
@@ -28,12 +25,13 @@ export const FWButton = styled.button`
     margin: 32px 0 50px;
     font-size: 16px;
   }
+  
   @media only screen and (max-width: 500px) and (min-width: 375px) {
     font-size: 14px;
     margin: 24px 0 40px;
   }
 
-  @media only screen and (max-width: 1024px) and (min-width: 768px) {
-    margin: 40px 0 64px;
-  }
+  // @media only screen and (max-width: 1024px) and (min-width: 768px) {
+  //   margin: 40px 0 64px;
+  // }
 `;

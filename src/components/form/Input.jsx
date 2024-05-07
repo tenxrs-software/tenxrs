@@ -18,7 +18,7 @@ const Input = styled.input`
   @media only screen and (max-width: 500px) and (min-width: 375px) {
     font-size: 13px;
     padding: 8px 0;
-    margin: 40px 0;
+    margin: 0 0 40px;
   }
 `;
 

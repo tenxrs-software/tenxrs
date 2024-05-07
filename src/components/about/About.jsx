@@ -5,6 +5,7 @@ import {
   IconContainer,
   PillsContainer,
   SpectrumDiv,
+  Wrapper,
 } from "../common/Containers.jsx";
 import { FWButton } from "../common/FWButton";
 import { Title } from "../common/Title";
@@ -17,6 +18,7 @@ import { Pill } from "../common/Pill.jsx";
 import { useEffect, useState } from "react";
 import Card from "../common/card/Card.jsx";
 import { data } from "../data.js";
+import { Subtitle } from "../common/Subtitle.jsx";
 
 const About = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -37,20 +39,10 @@ const About = () => {
         <FWButton>Let's Work</FWButton>
         <Line />
 
-        <Title
-          $marBtm="40px"
-          $marTop="100px"
-          $margin="71px 0 34px"
-          $768width="607px"
-          $425width="321px"
-          $425fontSize="20px"
-          $768fontSize="32px"
-          $1024width="642px"
-          $1024margin="70px 0 40px"
-        >
-          Building Digital Products with Precision <br />
-          <TitleSpan>From Idea to Launch: </TitleSpan>
-        </Title>
+        <Subtitle>
+          Building Digital Products with Precision 
+          <TitleSpan> From Idea to Launch: </TitleSpan>
+        </Subtitle>
         <Splide
           options={{
             perPage: 3.5,
@@ -98,8 +90,9 @@ const About = () => {
             arrows: false,
             pagination: false,
             breakpoints: {
-              425: {
-                perPage: 4.5,
+              500: {
+                perPage: 5.5,
+               
               },
             },
           }}
@@ -111,17 +104,17 @@ const About = () => {
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/java.png" width="100%" />
+              <img src="/src/assets/java.png" width="80%" />
             </IconContainer>
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/react.png" width="100%" />
+              <img src="/src/assets/react.png" width="80%" />
             </IconContainer>
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/nodejs.png" width="100%" />
+              <img src="/src/assets/nodejs.png" width="80%" />
             </IconContainer>
           </SplideSlide>
 
@@ -132,37 +125,17 @@ const About = () => {
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/java.png" width="100%" />
+              <img src="/src/assets/java.png" width="80%" />
             </IconContainer>
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/react.png" width="100%" />
+              <img src="/src/assets/react.png" width="80%" />
             </IconContainer>
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/nodejs.png" width="100%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/js.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/java.png" width="100%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/react.png" width="100%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/nodejs.png" width="100%" />
+              <img src="/src/assets/nodejs.png" width="80%" />
             </IconContainer>
           </SplideSlide>
           <SplideSlide>
@@ -172,17 +145,17 @@ const About = () => {
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/java.png" width="100%" />
+              <img src="/src/assets/java.png" width="80%" />
             </IconContainer>
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/react.png" width="100%" />
+              <img src="/src/assets/react.png" width="80%" />
             </IconContainer>
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/nodejs.png" width="100%" />
+              <img src="/src/assets/nodejs.png" width="80%" />
             </IconContainer>
           </SplideSlide>
           <SplideSlide>
@@ -192,54 +165,61 @@ const About = () => {
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/java.png" width="100%" />
+              <img src="/src/assets/java.png" width="80%" />
             </IconContainer>
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/react.png" width="100%" />
+              <img src="/src/assets/react.png" width="80%" />
             </IconContainer>
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/nodejs.png" width="100%" />
+              <img src="/src/assets/nodejs.png" width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src="/src/assets/js.png" width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src="/src/assets/java.png" width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src="/src/assets/react.png" width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src="/src/assets/nodejs.png" width="80%" />
             </IconContainer>
           </SplideSlide>
         </Splide>
 
         <FlexRowContainer>
-          <SpectrumDiv
-            src="/src/assets/glass-spectrum.png"
-            $768width="29.8vw"
+      
+         <SpectrumDiv
+            src="/src/assets/glass-spectrum.png"            
           />
-          <Title
-            $minMargin="24px 0"
-            $widthVary="700px"
-            $425width="262px"
-            $TextAlign="center"
-            $425padding="0 50px"
-            $425fontSize="20px"
-            $768fontSize="2rem"
-            $768width="56vw"
-            $768margin="0"
-            $1024width={width < 1024 ? "50vw" : "52vw"}
-            $1024margin="0"
-          >
-            collaborated with Organisations in diverse{" "}
-            <TitleSpan>sectors</TitleSpan>
-          </Title>
-          <PillsContainer
-            $widthSize="600px"
-            $425width="349px"
-            $768width="41.7vw"
-            $1024width="42.7vw"
-          >
+
+          <Wrapper>
+          <Subtitle  $width={'65.8vw'}>
+            collaborated with Organisations in diverse
+            <TitleSpan> sectors</TitleSpan>
+          </Subtitle>
+          
+          <PillsContainer $Textwidth>
             <Pill>Startups</Pill>
             <Pill>Foreign Exchange</Pill>
             <Pill>Application</Pill>
             <Pill>Finance</Pill>
             <Pill>Neuroscience</Pill>
           </PillsContainer>
+          </Wrapper>
         </FlexRowContainer>
 
         {/* <p style={{ color: "white" }}>

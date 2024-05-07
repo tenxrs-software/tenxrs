@@ -6,20 +6,16 @@ import { Title } from "../common/Title";
 import { TitleSpan } from "../common/TitleSpan";
 import { BudgetTitle } from "./BudgetTitle";
 import { InputContainer } from "./Input";
+import { Subtitle } from "../common/Subtitle";
 
 export const Contact = () => {
   return (
     <>
       <Center $end="true">
-        <Title
-          $marBtm="20px"
-          $425fontSize="20px"
-          $768margin="50px 0 20px"
-          $1024margin="0 0 40px"
-        >
+        <Subtitle>
           Tell us about your <br /> <TitleSpan>project</TitleSpan>
-        </Title>
-        <PillsContainer $minMargin="20px" $768margin="0" $1024margin="0">
+        </Subtitle>
+        <PillsContainer $minMargin="20px">
           <Pill>Web Development</Pill>
           <Pill>Application Development</Pill>
           <Pill>Maintenance</Pill>
@@ -30,7 +26,7 @@ export const Contact = () => {
         <InputContainer type="text" placeholder="Your Email" />
         <InputContainer type="text" placeholder="Tell Us About Your Project" />
 
-        <BudgetTitle>Project Budget</BudgetTitle>
+        <BudgetTitle $Mb>Project Budget</BudgetTitle>
 
         <PillsContainer>
           <Pill>10K - 20K</Pill>
