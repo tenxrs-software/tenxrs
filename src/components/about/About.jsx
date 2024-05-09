@@ -19,6 +19,10 @@ import { useEffect, useState } from "react";
 import Card from "../common/card/Card.jsx";
 import { data } from "../data.js";
 import { Subtitle } from "../common/Subtitle.jsx";
+import { main } from '../../Themes.jsx'
+
+
+
 
 const About = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -47,21 +51,12 @@ const About = () => {
           options={{
             perPage: 3.5,
             rewind: true,
-            gap: "24px",
+            gap: "20px",
             pagination: false,
             focus: "center",
             arrows: false,
             breakpoints: {
-              1024: {
-                perPage: 2.2,
-              },
-              768: {
-                perPage: 2.2,
-              },
-              500: {
-                perPage: 1.2,
-                gap: "19px",
-              },
+              ...main.SplideBreakpoints.cards
             },
           }}
         >
@@ -90,10 +85,7 @@ const About = () => {
             arrows: false,
             pagination: false,
             breakpoints: {
-              500: {
-                perPage: 5.5,
-               
-              },
+             ...main.SplideBreakpoints.icons
             },
           }}
         >

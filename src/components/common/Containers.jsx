@@ -12,11 +12,12 @@ export const Center = styled.div`
 `;
 
 export const CardContainer = styled.div`
-  max-width: 398px;
+  width: 398px;
   margin-bottom: 100px;
   background: ${(props) => props.$CardBg};
   padding: 24px 24px 0 24px;
   border-radius: 20px;
+
 
   @media only screen and (max-width: 1024px) and (min-width: 768px) {
     margin-bottom: 95px;
@@ -51,8 +52,6 @@ export const IconContainer = styled.div`
   max-width: 50px;
   margin-bottom: 100px;
 
- 
-  
   @media only screen and (max-width: 1024px) and (min-width: 768px) {
     margin-bottom: 71px;
   }
@@ -62,8 +61,6 @@ export const IconContainer = styled.div`
 
   @media only screen and (max-width: 500px) and (min-width: 375px) {
     margin-bottom: 0px;
-
-    
   }
 `;
 
@@ -74,21 +71,10 @@ export const PillsContainer = styled.div`
   max-width: ${(props) => props.$widthSize};
   flex-wrap: wrap;
   
-
-
   @media only screen and (max-width: 1440px) and (min-width: 1024px){
     width : ${props => props.$Textwidth && '607px' }
     
   }
-
-  // @media only screen and (max-width: 1024px) and (min-width: 768px) {
-  //   display: grid;
-  //   grid-template-columns: repeat(2, 1fr);
-  //   width: ${(props) => props.$1024width};
-  //   margin: ${(props) => props.$1024margin};
-  // }
-
-
 
   @media only screen and (min-width: 500px) and (max-width: 768px) {
     width: ${props => props.$Textwidth && '320px'};
@@ -104,7 +90,6 @@ export const FlexRow = styled.div`
   max-width: 1440px;
   width: 100%;
   display: flex;
-  // align-items: center;
   gap: ${(props) => props.$gap};
   margin: ${(props) => (props.$marginTop ? props.$marginTop : '0 0 100px')};
   justify-content: ${(props) =>
@@ -151,23 +136,11 @@ export const SpectrumDiv = styled.img`
 
   @media only screen and (max-width: 500px) and (min-width: 375px) {
     width: 65%;
-    // margin: 40px 0 0 0;
   }
 
 `;
 export const LandingContent = styled.div`
   position: relative;
-
-
-  // @media only screen and (min-width: 500px) and (max-width: 768px) {
-  //   margin-top: 57px;
-  // }
-  // @media only screen and (max-width: 1024px) and (min-width: 768px) {
-  //   margin-top: 89px;
-  // }
-  // @media only screen and (max-width: 500px) and (min-width: 375px) {
-  //   margin-top: 40px;
-  // }
 `;
 
 export const Wrapper = styled.div`
@@ -184,6 +157,11 @@ flex-direction : column;
   @media only screen and (min-width : 500px ) and (max-width : 768px){
     width : 424px;
 
+  }
+
+  @media only screen and (min-width : 375px) and (max-width: 500px){
+    justify-content :center;
+    text-align : center
   }
 `
 export const FlexRowContainer = ({ children }) => {

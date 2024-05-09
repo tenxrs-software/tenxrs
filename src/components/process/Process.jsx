@@ -7,11 +7,9 @@ export const Proccess = () => {
   return (
     <>
       <Center $text="true">
-        <Wrapper>
-        <Subtitle $pad24>
+        <Subtitle  $mx_width $marginLeft='35px'>
           Our process is <TitleSpan>simple</TitleSpan>
         </Subtitle>
-        </Wrapper>
         <ProcessItems icon={"icon"} title={"Title"} subTitle={"Sub"} />
       </Center>
     </>

@@ -1,3 +1,4 @@
+import { main } from '../../Themes.jsx'
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import styled from "styled-components";
 import searchIcon from "../../assets/Vectorsearch.png";
@@ -5,13 +6,13 @@ import BrushIcon from "../../assets/Vectorpaint-brush.png";
 import TubeIcon from "../../assets/tube.png";
 import BrowseIcon from "../../assets/browser.png";
 const ProcessCardContainer = styled.div`
-  max-width: 398px;
+  max-width: 350px;
   background: #202020;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   align-items: flex-start;
-  height: 314px;
+  height: 280px;
   padding: 25px 30px;
   justify-content: space-between;
   text-align: start;
@@ -20,10 +21,10 @@ const ProcessCardContainer = styled.div`
   &:hover {
     background: #5534f7;
   }
-
+  
   @media screen and (max-width: 1024px) {
-    max-height: 234px;
     text-align: start;
+  
   }
   @media screen and (max-width: 768px) {
     max-height: 224px;
@@ -40,10 +41,9 @@ const ProcessCardContainer = styled.div`
 
 export const ProcessCardContainerText = styled.h5`
   color: ${(props) => (props.$pale ? "#ACACAC" : "white")};
-  // font-style : ${props =>  props.theme.font.style.subTitle};
   font-weight : ${props => props.$semiBold ? props.theme.font.weight.sixHundred : props.theme.font.weight.subTitle};
   font-size : ${props => props.$fontSize ? props.theme.font.sizes.button : '16px'};
-  margin : 10px 0;
+  margin :  0;
   
   
 
@@ -55,21 +55,13 @@ export const ProcessItems = () => {
       options={{
         perPage: 3.5,
         rewind: true,
-        gap: "24px",
+        gap: "20px",
         focus: "center",
         arrows: false,
         pagination: false,
         breakpoints: {
-          1024: {
-            perPage: 2.2,
-          },
-          768: {
-            perPage: 2.2,
-          },
-          500: {
-            perPage: 1.2,
-            gap: "19px",
-          },
+
+          ...main.SplideBreakpoints.cards
         },
       }}
     >

@@ -51,17 +51,10 @@ export const main = {
       p24 : '0 34px'
     }
   },
-
-  // MEDIA QUERIES 
   subtitles : {
     width : {
         mx : '626px'
     },
-
-  
-
-
-  
 },
 landingTitle : {
   font :{
@@ -74,63 +67,26 @@ width:{
   size768: '60px',
   size425 : '272px'
 }
+} , 
+SplideBreakpoints : {
+  cards : {
+    1024: {
+      perPage: 2.2,
+    },
+    768: {
+      perPage: 2.2,
+    },
+    500: {
+      perPage: 1.2,
+      gap: "19px",
+    }
+  },
+  icons :{
+    500: {
+      perPage: 5.5,
+     
+    },
+  }
 
-}  
+}
 };
-
-// subtitle props
-
-// $768width = "607px";
-// $425width = "321px";
-// $425fontSize = "20px";
-// $768fontSize = "32px";
-// $1024width = "642px";
-// $1024margin = "70px 0 40px";
-// $425width = "262px";
-// $TextAlign = "center";
-// $425padding = "0 50px";
-// $425fontSize = "20px";
-// $768fontSize = "2rem";
-// $768width = "56vw";
-// $768margin = "0";
-// $1024margin = "0";
-// $1024width={width < 1024 ? "50vw" : "52vw"}
-// $425fontSize="20px"
-//           $768margin="50px 0 20px"
-//           $1024margin="0 0 40px"
-
-// main title media props
-
-// $425fontSize="32px"
-//             $768fontSize="60px"
-//             $425width="272px"
-//             $768width="578px"
-//             $768margin="24px 0 "
-//             $1024fontSize="78px"
-//             $1024width="665px"
-//             $1024margin="0"
-//             $425mb="0"
-
-// budget title media values
-
-// $425sub="14px"
-// $425width="263px"
-// $1024margin="8px 0 0"
-
-// inside about pills container startups content
-
-// $widthSize="600px"
-// $425width="349px"
-// $768width="41.7vw"
-// $1024width="42.7vw"
-
-// contact component pill
-
-// $768margin="0" $1024margin="0"
-
-// props for process title
-
-// $425fontSize="20px"
-//           $768margin="0 0 34px"
-//           $768fontSize="32px"
-//           $1024margin="80px 0 40px"
