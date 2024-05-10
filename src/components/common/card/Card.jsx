@@ -9,7 +9,7 @@ const Card = ({ icon, title, serviceImg, bg }) => {
   return (
     <div>  
       <img src={icon} alt="icon" />
-      <P $Textcolor> {title}</P>
+      <P $Textcolor='true'> {title}</P>
       <img width="100%" src={serviceImg} alt="service image" />
     </div>
   );

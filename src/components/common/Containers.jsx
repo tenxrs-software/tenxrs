@@ -143,7 +143,7 @@ export const LandingContent = styled.div`
   position: relative;
 `;
 
-export const Wrapper = styled.div`
+export const WrapperDiv = styled.div`
 width: 100%;
 display : flex;
 justify-content : center;
@@ -160,8 +160,7 @@ flex-direction : column;
   }
 
   @media only screen and (min-width : 375px) and (max-width: 500px){
-    justify-content :center;
-    text-align : center
+    width : 300px
   }
 `
 export const FlexRowContainer = ({ children }) => {

@@ -5,7 +5,7 @@ import {
   IconContainer,
   PillsContainer,
   SpectrumDiv,
-  Wrapper,
+  WrapperDiv,
 } from "../common/Containers.jsx";
 import { FWButton } from "../common/FWButton";
 import { Title } from "../common/Title";
@@ -19,13 +19,13 @@ import { useEffect, useState } from "react";
 import Card from "../common/card/Card.jsx";
 import { data } from "../data.js";
 import { Subtitle } from "../common/Subtitle.jsx";
-import { main } from '../../Themes.jsx'
-
-
-
+import { useTheme } from "styled-components";
 
 const About = () => {
   const [width, setWidth] = useState(window.innerWidth);
+
+
+  const theme = useTheme()
 
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -56,7 +56,7 @@ const About = () => {
             focus: "center",
             arrows: false,
             breakpoints: {
-              ...main.SplideBreakpoints.cards
+              ...theme.SplideBreakpoints.cards
             },
           }}
         >
@@ -85,7 +85,8 @@ const About = () => {
             arrows: false,
             pagination: false,
             breakpoints: {
-             ...main.SplideBreakpoints.icons
+              ...theme.SplideBreakpoints.icons
+
             },
           }}
         >
@@ -198,20 +199,20 @@ const About = () => {
             src="/src/assets/glass-spectrum.png"            
           />
 
-          <Wrapper>
+          <WrapperDiv>
           <Subtitle  $width={'65.8vw'}>
             collaborated with Organisations in diverse
             <TitleSpan> sectors</TitleSpan>
           </Subtitle>
           
-          <PillsContainer $Textwidth>
+          <PillsContainer $Textwidth='true'>
             <Pill>Startups</Pill>
             <Pill>Foreign Exchange</Pill>
             <Pill>Application</Pill>
             <Pill>Finance</Pill>
             <Pill>Neuroscience</Pill>
           </PillsContainer>
-          </Wrapper>
+          </WrapperDiv>
         </FlexRowContainer>
 
         {/* <p style={{ color: "white" }}>

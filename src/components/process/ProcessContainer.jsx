@@ -60,7 +60,6 @@ export const ProcessItems = () => {
         arrows: false,
         pagination: false,
         breakpoints: {
-
           ...main.SplideBreakpoints.cards
         },
       }}
@@ -69,8 +68,8 @@ export const ProcessItems = () => {
         <ProcessCardContainer>
           <img src={searchIcon} alt="img" />
           <div>
-            <ProcessCardContainerText $semiBold $fontSize>Discovery</ProcessCardContainerText>
-            <ProcessCardContainerText $pale>
+            <ProcessCardContainerText $semiBold='true' $fontSize='true'>Discovery</ProcessCardContainerText>
+            <ProcessCardContainerText $pale='true'>
               Clarifying and focusing on the problem.
             </ProcessCardContainerText>
           </div>
@@ -78,10 +77,10 @@ export const ProcessItems = () => {
       </SplideSlide>
       <SplideSlide>
         <ProcessCardContainer>
-          <img src={BrushIcon} alt="" />
+          <img src={BrushIcon} alt="img" />
           <div>
-            <ProcessCardContainerText $semiBold $fontSize>Design</ProcessCardContainerText>
-            <ProcessCardContainerText $pale>
+            <ProcessCardContainerText $semiBold='true' $fontSize='true'>Design</ProcessCardContainerText>
+            <ProcessCardContainerText $pale='true'>
               Building a testable version of the idea.
             </ProcessCardContainerText>
           </div>
@@ -91,8 +90,8 @@ export const ProcessItems = () => {
         <ProcessCardContainer>
           <img src={BrowseIcon} />
           <div>
-            <ProcessCardContainerText $semiBold $fontSize>Development</ProcessCardContainerText>
-            <ProcessCardContainerText $pale>
+            <ProcessCardContainerText $semiBold='true' $fontSize='true'>Development</ProcessCardContainerText>
+            <ProcessCardContainerText $pale='true'>
               Build out of design style guide
             </ProcessCardContainerText>
           </div>
@@ -100,10 +99,10 @@ export const ProcessItems = () => {
       </SplideSlide>
       <SplideSlide>
         <ProcessCardContainer>
-          <img src={TubeIcon} alt="" />
+          <img src={TubeIcon} alt="img" />
           <div>
-            <ProcessCardContainerText $semiBold $fontSize>Validation</ProcessCardContainerText>
-            <ProcessCardContainerText $pale>Implement product analytics</ProcessCardContainerText>
+            <ProcessCardContainerText $semiBold='true' $fontSize='true'>Validation</ProcessCardContainerText>
+            <ProcessCardContainerText $pale='true'>Implement product analytics</ProcessCardContainerText>
           </div>
         </ProcessCardContainer>
       </SplideSlide>
