@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
-const Card = ({ icon, title, serviceImg }) => {
+export const P = styled.p`
+  color: ${(props) =>
+    props.$Textcolor ? props.theme.colors.text.white : props.$Textcolor};
+`;
+
+const Card = ({ icon, title, serviceImg, bg }) => {
   return (
-    <>
-      <img src={icon} alt="" />
-      <p style={{ color: "white" }}>{title}</p>
-      <img width="100%" src={serviceImg} alt="" />
-    </>
+    <div>  
+      <img src={icon} alt="icon" />
+      <P $Textcolor='true'> {title}</P>
+      <img width="100%" src={serviceImg} alt="service image" />
+    </div>
   );
 };
 

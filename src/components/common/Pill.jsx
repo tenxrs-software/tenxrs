@@ -17,4 +17,8 @@ export const Pill = styled.button`
     padding: 10px 24px;
     font-size: 16px;
   }
+  @media only screen and (max-width: 500px) and (min-width: 375px) {
+    font-size: 14px;
+    width: ${(props) => props.$425width};
+  }
 `;
