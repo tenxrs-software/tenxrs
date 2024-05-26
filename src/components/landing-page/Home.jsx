@@ -5,26 +5,15 @@ import { TitleSpan } from "../common/TitleSpan";
 import Nav from "../nav/Nav";
 import { BudgetTitle } from "../form/BudgetTitle";
 import { Center, LandingContent } from "../common/Containers";
-import { useState, useEffect } from "react";
+import useWindowResize from "../Hooks/WindowResize";
+
 
 const Home = () => {
-
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setWidth(window.innerWidth);
-    });
-
-    return () => {
-      window.removeEventListener("resize", window);
-    };
-  }, [width]);
+  const width = useWindowResize()
 
   return (
     <>
-      <Center>
-        <Nav />
+      <Center id="Tenxrs">
         <LandingContent>
           <Canvas style={{ position: "absolute", top: `${width >= 1440 && "-20%" || width <= 768 && '-20%'  }`, left: `${width <= 768 && '28%' || width >= 768 && '300px' } ` }}>
             <Scene />

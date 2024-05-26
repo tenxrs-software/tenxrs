@@ -11,7 +11,7 @@ import { Subtitle } from "../common/Subtitle";
 export const Contact = () => {
   return (
     <>
-      <Center $end="true">
+      <Center id="contact" $end="true">
         <Subtitle>
           Tell us about your <br /> <TitleSpan>project</TitleSpan>
         </Subtitle>
@@ -44,6 +44,7 @@ export const Contact = () => {
             Location: Broadacres Drive, Fourways, 2191{" "}
           </BudgetTitle>
         </ContactContainer>
+        
       </Center>
     </>
   );

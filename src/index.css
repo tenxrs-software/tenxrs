@@ -7,9 +7,11 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   background: black;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
 }
 
 #root {
-  height: 100vh;
+  height: auto;
   background: black;
 }

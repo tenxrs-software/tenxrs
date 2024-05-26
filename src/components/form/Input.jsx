@@ -19,6 +19,7 @@ const Input = styled.input`
     font-size: 13px;
     padding: 8px 0;
     margin: 0 0 40px;
+    // width : 90%
   }
 `;
 
