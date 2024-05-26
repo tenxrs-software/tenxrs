@@ -6,7 +6,7 @@ import { ProcessItems } from "./ProcessContainer";
 export const Proccess = () => {
   return (
     <>
-      <Center $text="true">
+      <Center id="process" $text="true">
         <Subtitle  $mx_width='true' $marginLeft='35px'>
           Our process is <TitleSpan>simple</TitleSpan>
         </Subtitle>

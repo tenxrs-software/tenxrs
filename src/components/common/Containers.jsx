@@ -9,31 +9,32 @@ export const Center = styled.div`
   background: black;
   text-align: ${(props) => (props.$text ? "center" : "left")};
   padding-bottom: ${(props) => (props.$end ? "80px" : 0)};
-`;
-
-export const CardContainer = styled.div`
+  `;
+  
+  export const CardContainer = styled.div`
   width: 398px;
   margin-bottom: 100px;
   background: ${(props) => props.$CardBg};
   padding: 24px 24px 0 24px;
   border-radius: 20px;
-
+  
 
   @media only screen and (max-width: 1024px) and (min-width: 768px) {
-    margin-bottom: 95px;
-  }
-
-  @media only screen and (min-width: 500px) and (max-width: 768px) {
-    /* Adjust width for smaller devices */
-    font-size: 13px;
-    margin-bottom: 50px;
-  }
-
-  @media only screen and (max-width: 500px) and (min-width: 375px) {
-    max-width: 322px;
-    font-size: 13px;
-    border-radius: 16px;
-    margin-bottom: 40px;
+      margin-bottom: 95px;
+    }
+    
+    @media only screen and (min-width: 500px) and (max-width: 768px) {
+        /* Adjust width for smaller devices */
+        font-size: 13px;
+        margin-bottom: 50px;
+    }
+    
+    @media only screen and (max-width: 500px) and (min-width: 375px) {
+        max-width: 322px;
+        font-size: 13px;
+        border-radius: 16px;
+        margin-bottom: 40px;
+        
   }
 
 `;

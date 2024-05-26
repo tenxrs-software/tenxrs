@@ -8,38 +8,23 @@ import {
   WrapperDiv,
 } from "../common/Containers.jsx";
 import { FWButton } from "../common/FWButton";
-import { Title } from "../common/Title";
 import { TitleSpan } from "../common/TitleSpan";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import "../../assets/card-design.png";
 import { Line } from "../common/LineDivider.jsx";
 import { Pill } from "../common/Pill.jsx";
-import { useEffect, useState } from "react";
 import Card from "../common/card/Card.jsx";
 import { data } from "../data.js";
 import { Subtitle } from "../common/Subtitle.jsx";
 import { useTheme } from "styled-components";
 
 const About = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-
-
   const theme = useTheme()
-
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setWidth(window.innerWidth);
-    });
-
-    return () => {
-      window.removeEventListener("resize", window);
-    };
-  }, [width]);
 
   return (
     <>
-      <Center>
+      <Center id="services">
         <FWButton>Let's Work</FWButton>
         <Line />
 
@@ -89,6 +74,7 @@ const About = () => {
 
             },
           }}
+        
         >
           <SplideSlide>
             <IconContainer>
@@ -196,10 +182,11 @@ const About = () => {
         <FlexRowContainer>
       
          <SpectrumDiv
+           
             src="/src/assets/glass-spectrum.png"            
           />
 
-          <WrapperDiv>
+          <WrapperDiv id="industries">
           <Subtitle  $width={'65.8vw'}>
             collaborated with Organisations in diverse
             <TitleSpan> sectors</TitleSpan>
