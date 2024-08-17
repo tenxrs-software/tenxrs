@@ -18,7 +18,11 @@ import Card from "../common/card/Card.jsx";
 import { data } from "../data.js";
 import { Subtitle } from "../common/Subtitle.jsx";
 import { useTheme } from "styled-components";
-
+import js from './../../assets/js.png'
+import nodejs from './../../assets/nodejs.png'
+import java from './../../assets/java.png'
+import react from './../../assets/react.png'
+import glassSpectrum from './../../assets/glass-spectrum.png'
 const About = () => {
   const theme = useTheme()
 
@@ -79,112 +83,113 @@ const About = () => {
         >
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/js.png" width="80%" />
+              <img src={js} width="80%" />
             </IconContainer>
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/java.png" width="80%" />
+              <img src={java} width="80%" />
             </IconContainer>
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/react.png" width="80%" />
+              <img src={react} width="80%" />
             </IconContainer>
           </SplideSlide>
           <SplideSlide>
             <IconContainer>
-              <img src="/src/assets/nodejs.png" width="80%" />
+              <img src={nodejs} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={js} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={java} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={react} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={nodejs} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={js} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={java} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={react} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={nodejs} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={js} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={java} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={react} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={nodejs} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={js} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={java} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={react} width="80%" />
+            </IconContainer>
+          </SplideSlide>
+          <SplideSlide>
+            <IconContainer>
+              <img src={nodejs} width="80%" />
             </IconContainer>
           </SplideSlide>
 
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/js.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/java.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/react.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/nodejs.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/js.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/java.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/react.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/nodejs.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/js.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/java.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/react.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/nodejs.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/js.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/java.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/react.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
-          <SplideSlide>
-            <IconContainer>
-              <img src="/src/assets/nodejs.png" width="80%" />
-            </IconContainer>
-          </SplideSlide>
+        
         </Splide>
 
         <FlexRowContainer>
       
          <SpectrumDiv
            
-            src="/src/assets/glass-spectrum.png"            
+            src={glassSpectrum}            
           />
 
           <WrapperDiv id="industries">
