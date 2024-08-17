@@ -44,9 +44,6 @@ export const ProcessCardContainerText = styled.h5`
   font-weight : ${props => props.$semiBold ? props.theme.font.weight.sixHundred : props.theme.font.weight.subTitle};
   font-size : ${props => props.$fontSize ? props.theme.font.sizes.button : '16px'};
   margin :  0;
-  
-  
-
 `;
 
 export const ProcessItems = () => {

@@ -14,8 +14,9 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { useRef } from "react";
 import { useControls } from "leva";
 
+
 const Torus = () => {
-  const { nodes } = useGLTF("/src/assets/tenxtorus.glb");
+  const { nodes } = useGLTF("/tenxtorus.glb");
   const { viewport } = useThree(); // Destructuring viewport from useThree
 
   const mesh = useRef();
@@ -32,6 +33,7 @@ const Torus = () => {
       ior: { value: 1.2, min: 0, max: 3, step: 0.1 },
       chromaticAberration: { value: 0.02, min: 0, max: 1 },
       backside: { value: true },
+      visible: true,
   });
 
   return (
