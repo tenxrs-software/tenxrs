@@ -5,7 +5,7 @@ export const Subtitle = styled.h1`
     font-weight : ${props => props.theme.font.weight.fourHundred};
     font-size : ${props => props.theme.font.sizes.subTitle};
     font-style : ${props => props.theme.font.style.subTitle};
-    margin : 0 0 40px ;
+    margin : ${props => props.$Margin ? props.$Margin :  '0 0 40px'} ;
     max-width : ${props => props.$mx_width ? props.$mx_width : props.theme.subtitles.width.mx};
 
     

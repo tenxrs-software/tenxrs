@@ -69,6 +69,7 @@ const About = () => {
             autoplay: true,
             arrows: false,
             pagination: false,
+            speed: 2000,
             breakpoints: {
               ...theme.SplideBreakpoints.icons
 

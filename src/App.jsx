@@ -5,19 +5,20 @@ import { Contact } from "./components/form/Contact";
 import Home from "./components/landing-page/Home";
 import { Proccess } from "./components/process/Process";
 import Nav from "./components/nav/Nav";
+import AboutUs from "./components/about/AboutUs";
 
 
 function App() {
   return (
     <>
-    <Nav />
+     <Nav />
       <Padding_64>
         <Home />
         <About />
+        <AboutUs/>
         <Proccess />
         <Contact />
-      </Padding_64>
-        
+      </Padding_64> 
     </>
   );
 }
